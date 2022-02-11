@@ -126,7 +126,7 @@ func calculateKochSide(_ angle: inout CGFloat, _ angleChange: inout CGFloat, _ f
 ///
 func KochSide(fractalnum: Int, x: CGFloat, y: CGFloat, angle: CGFloat, size: Double, divisorForAngle: Int) -> [(xPoint: Double, yPoint: Double)] {
     
-    var myAngle = angle
+    var myAngle = -angle
     var myX = x
     var myY = y
     let piDivisorForAngle = divisorForAngle
@@ -139,30 +139,28 @@ func KochSide(fractalnum: Int, x: CGFloat, y: CGFloat, angle: CGFloat, size: Dou
         
         let theta = Double.pi/Double(piDivisorForAngle)
         let thetaDeg = theta*180.0/Double.pi
-        
         let newSizeOfSide = size/(2.0*(1.0+sin(((theta))/2.0)))
         
-        currentPoint += CesaroSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
+        currentPoint += KochSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: -myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
         myX = CGFloat(currentPoint[currentPoint.endIndex-1].xPoint)
         myY = CGFloat(currentPoint[currentPoint.endIndex-1].yPoint)
         
         myAngle = turn(angle: myAngle, angleChange: -(90.0-thetaDeg/2.0))
         
-        currentPoint += CesaroSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
+        currentPoint += KochSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: -myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
         myX = CGFloat(currentPoint[currentPoint.endIndex-1].xPoint)
         myY = CGFloat(currentPoint[currentPoint.endIndex-1].yPoint)
         
         myAngle = turn(angle: myAngle, angleChange: (180.0-thetaDeg))
         
-        currentPoint += CesaroSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
+        currentPoint += KochSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: -myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
         myX = CGFloat(currentPoint[currentPoint.endIndex-1].xPoint)
         myY = CGFloat(currentPoint[currentPoint.endIndex-1].yPoint)
         
         myAngle = turn(angle: myAngle, angleChange: -(90.0-thetaDeg/2.0))
         
-        currentPoint += CesaroSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
-        
-        
+        currentPoint += KochSide(fractalnum: fractalnum-1, x: myX, y: myY, angle: -myAngle, size: newSizeOfSide, divisorForAngle: piDivisorForAngle)
+    
     }
     return(currentPoint)
 }
