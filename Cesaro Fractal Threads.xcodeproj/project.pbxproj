@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C7A06BC27B70A8F00BB3039 /* Koch_Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A06BB27B70A8F00BB3039 /* Koch_Functions.swift */; };
+		2C7A06BE27B70DB000BB3039 /* KochFractal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A06BD27B70DB000BB3039 /* KochFractal.swift */; };
+		2C7A06BF27B712C700BB3039 /* KochFractal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A06BD27B70DB000BB3039 /* KochFractal.swift */; };
+		2C7A06C027B712CD00BB3039 /* Koch_Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A06BB27B70A8F00BB3039 /* Koch_Functions.swift */; };
 		A53B60992798FB690040414D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B60982798FB690040414D /* Tests_iOS.swift */; };
 		A53B609B2798FB690040414D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B609A2798FB690040414D /* Tests_iOSLaunchTests.swift */; };
 		A53B60A52798FB690040414D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B60A42798FB690040414D /* Tests_macOS.swift */; };
@@ -49,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C7A06BB27B70A8F00BB3039 /* Koch_Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Koch_Functions.swift; sourceTree = "<group>"; };
+		2C7A06BD27B70DB000BB3039 /* KochFractal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KochFractal.swift; sourceTree = "<group>"; };
 		A53B60822798FB690040414D /* Cesaro_Fractal_ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cesaro_Fractal_ThreadsApp.swift; sourceTree = "<group>"; };
 		A53B60832798FB690040414D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A53B60842798FB690040414D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +120,8 @@
 				A53B60832798FB690040414D /* ContentView.swift */,
 				A53B60C62799011C0040414D /* CesaroView.swift */,
 				A53B60BC2798FE5C0040414D /* CesaroFractal.swift */,
+				2C7A06BD27B70DB000BB3039 /* KochFractal.swift */,
+				2C7A06BB27B70A8F00BB3039 /* Koch_Functions.swift */,
 				A53B60C1279900600040414D /* Cesaro_Functions.swift */,
 				A53B60842798FB690040414D /* Assets.xcassets */,
 			);
@@ -307,11 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7A06BC27B70A8F00BB3039 /* Koch_Functions.swift in Sources */,
 				A53B60C72799011C0040414D /* CesaroView.swift in Sources */,
 				A53B60BD2798FE5C0040414D /* CesaroFractal.swift in Sources */,
 				A53B60AA2798FB690040414D /* ContentView.swift in Sources */,
 				A53B60C2279900600040414D /* Cesaro_Functions.swift in Sources */,
 				A53B60A82798FB690040414D /* Cesaro_Fractal_ThreadsApp.swift in Sources */,
+				2C7A06BE27B70DB000BB3039 /* KochFractal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,8 +331,10 @@
 			files = (
 				A53B60C82799011C0040414D /* CesaroView.swift in Sources */,
 				A53B60BE2798FE5C0040414D /* CesaroFractal.swift in Sources */,
+				2C7A06C027B712CD00BB3039 /* Koch_Functions.swift in Sources */,
 				A53B60AB2798FB690040414D /* ContentView.swift in Sources */,
 				A53B60C3279900600040414D /* Cesaro_Functions.swift in Sources */,
+				2C7A06BF27B712C700BB3039 /* KochFractal.swift in Sources */,
 				A53B60A92798FB690040414D /* Cesaro_Fractal_ThreadsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = 37PA3332DC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -547,7 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = 37PA3332DC;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -576,7 +588,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = 37PA3332DC;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -603,7 +615,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = 37PA3332DC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,7 +640,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = 37PA3332DC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -655,7 +667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = 37PA3332DC;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -680,7 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = 37PA3332DC;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
