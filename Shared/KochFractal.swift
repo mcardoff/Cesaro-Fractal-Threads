@@ -30,7 +30,7 @@ class KochFractal: NSObject, ObservableObject {
         kochVerticesForPath = []
     }
     
-    /// calculateCesaro
+    /// calculateKoch
     ///
     /// This function ensures that the program will not crash if non-valid input is applied.
     ///
@@ -59,7 +59,7 @@ class KochFractal: NSObject, ObservableObject {
     }
         
     
-    /// calculateCesaroFractalVertices
+    /// calculateKochFractalVertices
     ///
     /// - Parameters:
     ///   - iterations: number of iterations in the fractal
@@ -119,7 +119,7 @@ class KochFractal: NSObject, ObservableObject {
     /// The function runs on the main thread so it can update the GUI
     ///
     /// - Parameters:
-    ///   - pathData: array of tuples containing the calculated Cesaro Vertices
+    ///   - pathData: array of tuples containing the calculated Koch Vertices
     ///
     @MainActor func updateData(pathData: [(xPoint: Double, yPoint: Double)]){
         

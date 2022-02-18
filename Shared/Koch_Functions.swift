@@ -84,9 +84,9 @@ func KochFractalCalculator(fractalnum: Int, x: CGFloat, y: CGFloat, size: Double
     
 }
 
-/// calculateCesaroSide
+/// calculateKochSide
 ///
-/// Calculates the Cesaro Fractal from each side of the original 4 sided shape
+/// Calculates the Koch Fractal from each side of the original 4 sided shape
 ///
 /// - Parameters:
 ///   - angle: current angle
@@ -96,7 +96,7 @@ func KochFractalCalculator(fractalnum: Int, x: CGFloat, y: CGFloat, size: Double
 ///   - myY: x value of current vertex
 ///   - size: size of the Fractal
 ///   - angleDivisor: integer that sets the angle as pi/piAngleDivisor so if 2, then the angle is π/2
-/// - Returns: array of x and y points for all of the vertices in the Cesaro Fractal
+/// - Returns: array of x and y points for all of the vertices in the Koch Fractal
 ///
 func calculateKochSide(_ angle: inout CGFloat, _ angleChange: inout CGFloat, _ fractalnum: Int, _ myX: inout CGFloat, _ myY: inout CGFloat, _ size: Double, _ angleDivisor: Int) -> [(xPoint: Double, yPoint: Double)] {
     
@@ -111,7 +111,7 @@ func calculateKochSide(_ angle: inout CGFloat, _ angleChange: inout CGFloat, _ f
     
 }
 
-/// CesaroSide
+/// KochSide
 ///
 /// Recursively calculates the Cesaro Fractal by decrementing the fractal number
 ///
@@ -122,7 +122,7 @@ func calculateKochSide(_ angle: inout CGFloat, _ angleChange: inout CGFloat, _ f
 ///   - angle: angle needed to move to the next vertex
 ///   - size: size of the fractal. Recursively gets smaller.
 ///   - divisorForAngle: integer that sets the angle as pi/piAngleDivisor so if 2, then the angle is π/2
-/// - Returns: array of x and y points for all of the vertices in the Cesaro Fractal
+/// - Returns: array of x and y points for all of the vertices in the Koch Fractal
 ///
 func KochSide(fractalnum: Int, x: CGFloat, y: CGFloat, angle: CGFloat, size: Double, divisorForAngle: Int) -> [(xPoint: Double, yPoint: Double)] {
     

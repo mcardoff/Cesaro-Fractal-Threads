@@ -59,7 +59,7 @@
 		A53B60832798FB690040414D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A53B60842798FB690040414D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A53B60892798FB690040414D /* Cesaro Fractal Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cesaro Fractal Threads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A53B608F2798FB690040414D /* Cesaro Fractal Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cesaro Fractal Threads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53B608F2798FB690040414D /* Koch Fractal Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koch Fractal Threads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53B60942798FB690040414D /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53B60982798FB690040414D /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		A53B609A2798FB690040414D /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				A53B60892798FB690040414D /* Cesaro Fractal Threads.app */,
-				A53B608F2798FB690040414D /* Cesaro Fractal Threads.app */,
+				A53B608F2798FB690040414D /* Koch Fractal Threads.app */,
 				A53B60942798FB690040414D /* Tests iOS.xctest */,
 				A53B60A02798FB690040414D /* Tests macOS.xctest */,
 			);
@@ -191,7 +191,7 @@
 			);
 			name = "Cesaro Fractal Threads (macOS)";
 			productName = "Cesaro Fractal Threads (macOS)";
-			productReference = A53B608F2798FB690040414D /* Cesaro Fractal Threads.app */;
+			productReference = A53B608F2798FB690040414D /* Koch Fractal Threads.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A53B60932798FB690040414D /* Tests iOS */ = {
@@ -572,8 +572,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jtIIT.Cesaro-Fractal-Threads";
-				PRODUCT_NAME = "Cesaro Fractal Threads";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IIT.Koch-Fractal-Threads";
+				PRODUCT_NAME = "Koch Fractal Threads";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -601,8 +601,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jtIIT.Cesaro-Fractal-Threads";
-				PRODUCT_NAME = "Cesaro Fractal Threads";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IIT.Koch-Fractal-Threads";
+				PRODUCT_NAME = "Koch Fractal Threads";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

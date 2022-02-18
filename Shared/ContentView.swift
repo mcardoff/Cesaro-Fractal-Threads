@@ -204,6 +204,10 @@ struct ContentView: View {
         print("End Time of \(Date())\n")
     }
     
+    /// calculateKoch
+    ///
+    /// Generates the Koch snowflake
+    ///
     func calculateKoch() async {
         
         kochFractal.setButtonEnable(state: false)
